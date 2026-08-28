@@ -1,0 +1,79 @@
+[
+  {
+    "id": "TC-01",
+    "description": "Clear NEFT settlement with date",
+    "input": "Claim settled. Payment sent via NEFT on 12-AUG-2024.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "SETTLED_NEFT"
+  },
+  {
+    "id": "TC-02",
+    "description": "Employer pending — standard portal wording",
+    "input": "Claim submitted. Under process at employer.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "PENDING_EMPLOYER"
+  },
+  {
+    "id": "TC-03",
+    "description": "EPFO processing — standard portal wording",
+    "input": "Claim under process at EPFO.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "PENDING_EPFO"
+  },
+  {
+    "id": "TC-04",
+    "description": "Claim rejected — brief portal wording",
+    "input": "Claim rejected.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "CLAIM_REJECTED"
+  },
+  {
+    "id": "TC-05",
+    "description": "Returned for correction",
+    "input": "Claim returned for correction. Please update details and resubmit.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "RETURNED_CORRECTION"
+  },
+  {
+    "id": "TC-06",
+    "description": "Payment failed due to wrong bank account",
+    "input": "Payment failed. Bank account details incorrect. Please update.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "PAYMENT_FAILED_BANK"
+  },
+  {
+    "id": "TC-07",
+    "description": "Auto-settled advance",
+    "input": "Advance claim auto-settled. Amount credited via NEFT.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "AUTO_SETTLED_ADVANCE"
+  },
+  {
+    "id": "TC-08",
+    "description": "Submitted, awaiting employer attestation",
+    "input": "Claim submitted. Awaiting employer attestation.",
+    "expected_match_type": "clear",
+    "expected_reason_code": "SUBMITTED_PENDING"
+  },
+  {
+    "id": "TC-09",
+    "description": "Partial match — NEFT with extra portal remarks",
+    "input": "Your PF withdrawal claim has been settled and the amount has been remitted through NEFT to your bank account as per records.",
+    "expected_match_type": "partial",
+    "expected_reason_code": "SETTLED_NEFT"
+  },
+  {
+    "id": "TC-10",
+    "description": "Unrecognized — completely off-topic input",
+    "input": "What is the weather like today?",
+    "expected_match_type": "unrecognized",
+    "expected_reason_code": "UNRECOGNIZED"
+  },
+  {
+    "id": "TC-11",
+    "description": "Unrecognized — vaguely financial but not EPFO status",
+    "input": "Your loan application is pending credit assessment by the nodal branch officer.",
+    "expected_match_type": "unrecognized",
+    "expected_reason_code": "UNRECOGNIZED"
+  }
+]
