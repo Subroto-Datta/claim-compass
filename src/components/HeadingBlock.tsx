@@ -19,9 +19,7 @@ export default function HeadingBlock() {
             means, who's responsible, and what to do next.
           </p>
           <div className="mt-3 flex items-center flex-wrap gap-x-2 gap-y-1 text-xs text-slate-500 font-medium">
-            <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 30+ statuses covered</span>
-            <span className="hidden sm:inline">·</span>
-            <span>Updated Aug 2024</span>
+            <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 30+ documented EPFO claim status codes covered</span>
           </div>
         </div>
       </div>
