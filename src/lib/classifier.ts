@@ -4,8 +4,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { TaxonomyRow, ClassificationResult, MatchType } from './types.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const rootPath = join(__dirname, '..', '..');
+const rootPath = process.cwd();
 
 const taxonomy: TaxonomyRow[] = JSON.parse(
   readFileSync(join(rootPath, 'data', 'epfo-statuses.json'), 'utf-8')
