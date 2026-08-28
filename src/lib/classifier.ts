@@ -1,7 +1,6 @@
 import OpenAI from 'openai';
 import { readFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
 import { TaxonomyRow, ClassificationResult, MatchType } from './types.js';
 
 const rootPath = process.cwd();
