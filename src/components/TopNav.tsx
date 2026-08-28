@@ -29,14 +29,14 @@ export default function TopNav() {
         </div>
 
         {/* High-visibility disclaimer — compliance shield, not a footnote */}
-        <div className="flex items-center gap-1.5 bg-amber-50 border border-amber-300 rounded-md px-2.5 py-1 flex-shrink-0">
+        <div className="flex items-center gap-1.5 bg-amber-50 border border-amber-300 rounded-md px-2.5 py-1 min-w-0">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" className="flex-shrink-0">
             <path d="M6 1L11 10H1L6 1Z" stroke="#B45309" strokeWidth="1.2" strokeLinejoin="round" />
             <path d="M6 4.5v2.5" stroke="#B45309" strokeWidth="1.2" strokeLinecap="round" />
             <circle cx="6" cy="8.5" r="0.6" fill="#B45309" />
           </svg>
-          <span className="text-xs font-semibold text-amber-800 whitespace-nowrap">
-            Independent Prototype · Not an official EPFO portal
+          <span className="text-[10px] sm:text-xs font-semibold text-amber-800 truncate">
+            <span className="hidden sm:inline">Independent Prototype · </span>Not official
           </span>
         </div>
 

@@ -10,17 +10,19 @@ export default function HeadingBlock() {
           style={{ backgroundColor: '#003366', minHeight: '2.5rem' }}
           aria-hidden="true"
         />
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight" style={{ color: '#003366' }}>
+        <div className="min-w-0">
+          <h1 className="text-xl sm:text-2xl font-semibold tracking-tight" style={{ color: '#003366' }}>
             EPFO Claim Status Interpreter
           </h1>
           <p className="mt-2 text-slate-500 text-sm leading-relaxed">
             Paste the exact status text from the Member Portal. We'll tell you what it
             means, who's responsible, and what to do next.
           </p>
-          <p className="mt-3 text-sm font-mono text-slate-500 tracking-wide">
-            Covers 30+ documented EPFO claim status codes · Knowledge base updated Aug 2024
-          </p>
+          <div className="mt-3 flex items-center flex-wrap gap-x-2 gap-y-1 text-xs text-slate-500 font-medium">
+            <span className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 30+ statuses covered</span>
+            <span className="hidden sm:inline">·</span>
+            <span>Updated Aug 2024</span>
+          </div>
         </div>
       </div>
     </div>

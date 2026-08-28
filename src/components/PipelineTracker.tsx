@@ -5,10 +5,10 @@
 const STAGES = [
   { id: 'Submitted',      label: 'Submitted' },
   { id: 'Employer Review', label: 'Employer' },
-  { id: 'EPFO Review',    label: 'EPFO Review' },
+  { id: 'EPFO Review',    label: 'EPFO' },
   { id: 'Decision',       label: 'Decision' },
   { id: 'Payment',        label: 'Payment' },
-  { id: 'Completed',      label: 'Completed' },
+  { id: 'Completed',      label: 'Done' },
 ];
 
 const DECISION_BADGE: Record<string, { className: string; label: string }> = {
